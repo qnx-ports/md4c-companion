@@ -3,7 +3,7 @@
 # QNX Maintainer: Felix Xing <fxing@qnx.com>
 pkgname=md4c
 pkgver=0.5.2
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Fast Markdown parser written in C"
 url="https://github.com/mity/md4c"
 arch="all"
@@ -32,7 +32,6 @@ package() {
     DESTDIR="$pkgdir" cmake --install build
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 30607ba39d6c59329f5a56a90cd816ff60b82ea752ac2b9df356d756529cfc49170019fae5df32fa94afc0e2a186c66eaf56fa6373d18436c06ace670675ba85  md4c-0.5.2.tar.gz
 "
